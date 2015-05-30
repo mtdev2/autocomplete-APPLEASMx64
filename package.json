@@ -1,7 +1,7 @@
 {
-  "name": "autocomplete-APPLEASMx64",
+  "name": "autocomplete-appleasmx64",
   "main": "./lib/main",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "APPLEASMx64 autocompetion",
   "repository": "https://github.com/OrionNebula/autocomplete-APPLEASMx64",
   "license": "MIT",
