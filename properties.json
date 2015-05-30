@@ -1,0 +1,319 @@
+{
+  "MOV": {
+      "snippet": "MOV ${1:res}, ${2:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Stores val into register res"
+  },
+  "ADD": {
+      "snippet": "ADD ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Adds arg and val and stores the result into register res"
+  },
+  "SUB": {
+      "snippet": "SUB ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Subtracts val from arg and stores the result into register res"
+  },
+  "MUL": {
+      "snippet": "MUL ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Multiplies arg and val and stores the result into register res"
+  },
+  "DIV": {
+      "snippet": "MUL ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Divides arg by val and stores the result into register res"
+  },
+  "ASR": {
+      "snippet": "ASR ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Arthmetically shifts arg val bits to the right, storing the result into register res"
+  },
+  "LSL": {
+      "snippet": "LSL ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Logically shifts arg val bits to the left, storing the result into register res"
+  },
+  "LSR": {
+      "snippet": "LSR ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Logically shifts arg val bits to the right, storing the result into register res"
+  },
+  "IFD": {
+      "snippet": "IFD ${1:arg}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Integer From Double"
+  },
+  "DFI": {
+      "snippet": "DFI ${1:arg}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Double From Integer"
+  },
+  "RTR": {
+      "snippet": "RTR ${1:arg}, ${2:addr}, ${3:off}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Regiter To Ram, stores long value arg to address addr + off"
+  },
+  "RFR": {
+      "snippet": "RFR ${1:res}, ${2:addr}, ${3:off}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Regiter From Ram, loads long value from address addr + off into res"
+  },
+  "BTR": {
+      "snippet": "BTR ${1:arg}, ${2:addr}, ${3:off}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Byte To Ram, stores the least significant byte of arg into address addr + off"
+  },
+  "BFR": {
+      "snippet": "BFR ${1:res}, ${2:addr}, ${3:off}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Byte From Ram, loats byte value from address addr + off into res"
+  },
+  "HBTR": {
+      "snippet": "HBTR ${1:arg}, ${2:addr}, ${3:off}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "High Bytes To Ram, stores the most significant 4 bytes of arg into address addr + off"
+  },
+  "LBTR": {
+      "snippet": "LBTR ${1:arg}, ${2:addr}, ${3:off}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Low Bytes To Ram, stores the least significant 4 bytes of arg into address addr + off"
+  },
+  "HBFR": {
+      "snippet": "HBFR ${1:res}, ${2:addr}, ${3:off}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Half Bytes From Ram, loads 4 bytes from address addr + off into register res"
+  },
+  "HLT": {
+      "snippet": "HLT",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Halts the processor"
+  },
+  "AND": {
+      "snippet": "AND ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Preforms a bitwise and on arg and val and stores the result into register res"
+  },
+  "ORR": {
+      "snippet": "ORR ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Preforms a bitwise or on arg and val and stores the result into register res"
+  },
+  "XOR": {
+      "snippet": "XOR ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Preforms a bitwise exclusive or on arg and val and stores the result into register res"
+  },
+  "RET": {
+      "snippet": "RET",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Returns the processor from an interrupted state"
+  },
+  "64: MOV": {
+      "snippet": "64: MOV ${1:res}, ${2:arg}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Stores 32-bit value arg into register res"
+  },
+  "64: DMOV": {
+      "snippet": "64: DMOV ${1:res}, ${2:arg}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Stores floating-point value arg into register res"
+  },
+  "64: ADD": {
+      "snippet": "64: ADD ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Adds arg and val, sores the result into register res"
+  },
+  "64: DADD": {
+      "snippet": "64: DADD ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Adds floating-point values arg and val and stores the result into register res"
+  },
+  "64: DSUB": {
+      "snippet": "64: DSUB ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Subtracts floating-point values val from arg and stores the result into register res"
+  },
+  "64: DMUL": {
+      "snippet": "64: DMUL ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Multiplies floating-point values arg and val and stores the result into register res"
+  },"64: DDIV": {
+      "snippet": "64: DDIV ${1:res}, ${2:arg}, ${3:val}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Divides floating-point values val by arg and stores the result into register res"
+  },
+  "64: B": {
+      "snippet": "64: B ${1:off}, ${2:cmp1}, ${3:cmp2}, ${4:cmpType}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Executes a jump to an adress off bytes away, assuming Rcmp1 and Rcmp2 pass the condition described by cmpType"
+  },
+  "64: DLN": {
+      "snippet": "64: DLN ${1:res}, ${2:arg}",
+      "type": "builtin",
+      "rightLabel": "instruction",
+      "description": "Takes the natural log of arg and stores the result into register res"
+  },
+  "if": {
+      "snippet": "if(${1:arg} ${2:=} ${3:arg})\n\t;body\nend",
+      "type": "snippet",
+      "rightLabel": "construct",
+      "description": "Perfoms a comparison between the two args and executes the body if it passes"
+  },
+  "while": {
+      "snippet": "do\n\t;body\nwhile(${1:arg} ${2:=} ${3:arg})",
+      "type": "snippet",
+      "rightLabel": "construct",
+      "description": "Repeats the body until the comparison fails"
+  },
+  "ifgoto": {
+      "snippet": "if(${1:arg} ${2:=} ${3:arg}) goto :${4:label}:",
+      "type": "snippet",
+      "rightLabel": "construct",
+      "description": "Perfoms a comparison between the two args and jumps to :label: if it passes"
+  },
+  "goto": {
+      "snippet": "goto :${1:label}:",
+      "type": "keyword",
+      "rightLabel": "construct",
+      "description": "Jumps to :label:"
+  },
+  "read": {
+      "snippet": "${1:var} -> ${2:reg}",
+      "type": "snippet",
+      "rightLabel": "construct",
+      "description": "Loads the value of var into reg"
+  },
+  "write": {
+      "snippet": "${1:var} <- ${2:reg}",
+      "type": "snippet",
+      "rightLabel": "construct",
+      "description": "Writes the value of reg into var"
+  },
+  "#mode": {
+      "snippet": "#mode ${1:text}",
+      "type": "snippet",
+      "rightLabel": "keyword",
+      "description": "Switch to a new mode"
+  },
+  "#data": {
+      "snippet": "#data",
+      "type": "keyword",
+      "rightLabel": "keyword",
+      "description": "Place the data block within a text section"
+  },
+  "structdef": {
+      "snippet": "${1:typename}\n{\n\t${2:type} ${3:name}\n}",
+      "type": "snippet",
+      "rightLabel": "construct",
+      "description": "Creates a new structure"
+  },
+  "structwrite": {
+      "snippet": "${1:struct}[${2:addr}].${3:prop} <- ${4:reg}",
+      "type": "snippet",
+      "rightLabel": "construct",
+      "description": "Writes to a structure property"
+  },
+  "structread": {
+      "snippet": "${1:struct}[${2:addr}].${3:prop} -> ${4:reg}",
+      "type": "snippet",
+      "rightLabel": "construct",
+      "description": "Reads from a structure property"
+  },
+  "int": {
+      "snippet": "int",
+      "type": "type",
+      "rightLabel": "type",
+      "description": "32-bit integer type"
+  },
+  "long": {
+      "snippet": "long",
+      "type": "type",
+      "rightLabel": "type",
+      "description": "64-bit integer type"
+  },
+  "byte": {
+      "snippet": "byte",
+      "type": "type",
+      "rightLabel": "type",
+      "description": "8-bit integer type"
+  },
+  "float": {
+      "snippet": "float",
+      "type": "type",
+      "rightLabel": "type",
+      "description": "32-bit floating-point type"
+  },
+  "double": {
+      "snippet": "double",
+      "type": "type",
+      "rightLabel": "type",
+      "description": "64-bit floating-point type"
+  },
+  "sizeof": {
+      "snippet": "sizeof(${1:type})",
+      "type": "function",
+      "rightLabel": "builtin",
+      "description": "Takes the size of a type"
+  },
+  "labeladdr": {
+      "snippet": "64: ADD ${1:r0}, r15, #:${2:label}:",
+      "type": "snippet",
+      "rightLabel": "snippet",
+      "description": "Stores the absolute address of a label"
+  },
+  "PC": {
+      "snippet": "r15",
+      "type": "variable",
+      "rightLabel": "register",
+      "description": "Processor register"
+  },
+  "LR": {
+      "snippet": "r14",
+      "type": "variable",
+      "rightLabel": "register",
+      "description": "Processor register"
+  },
+  "ProcMode": {
+      "snippet": "r13",
+      "type": "variable",
+      "rightLabel": "register",
+      "description": "Processor register"
+  },
+  "IVT": {
+      "snippet": "r12",
+      "type": "variable",
+      "rightLabel": "register",
+      "description": "Processor register"
+  }
+}

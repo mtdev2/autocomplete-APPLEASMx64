@@ -1,0 +1,21 @@
+{
+  "name": "autocomplete-APPLEASMx64",
+  "main": "./lib/main",
+  "version": "1.0.0",
+  "description": "APPLEASMx64 autocompetion",
+  "repository": "https://github.com/OrionNebula/autocomplete-APPLEASMx64",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    },
+    "dependencies": {
+      "fuzzaldrin": ">=1.0.0"
+    }
+  }
+}
