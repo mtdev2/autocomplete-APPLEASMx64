@@ -184,6 +184,12 @@
       "rightLabel": "instruction",
       "description": "Takes the natural log of arg and stores the result into register res"
   },
+  "SVC" : {
+    "snippet": "SVC #${1:0}",
+    "type": "builtin",
+    "rightLabel": "instruction",
+    "descirption": "Queues an interrupt to be called"
+  },
   "if": {
       "snippet": "if(${1:arg} ${2:=} ${3:arg})\n\t;body\nend",
       "type": "snippet",
